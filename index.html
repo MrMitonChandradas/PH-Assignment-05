@@ -578,20 +578,22 @@
 
         <aside class="bg-white rounded-xl shadow p-4 h-max lg:sticky lg:top-20">
           <div class="flex items-center justify-between mb-3">
-            <h3 class="font-semibold flex items-center gap-2 text-green-800">
+            <h3 class="flex items-center gap-2 text-green-800">
               <i class="fa-solid fa-clock-rotate-left"></i>
-              <span>Call History</span>
+              <span class="font-bold">Call History</span>
             </h3>
             <button
               id="clearHistoryBtn"
-              class="text-sm px-3 py-1 border rounded hover:bg-gray-50"
+              class="text-sm px-3 py-1 border rounded hover:bg-purple-800 font-bold"
             >
               Clear
             </button>
           </div>
           <ul id="historyList" class="space-y-2 text-sm">
-            <!-- Empty placeholder -->
-            <li id="emptyHistory" class="text-gray-400 text-center py-8">
+            <li
+              id="emptyHistory"
+              class="text-gray-400 items-center text-center py-8 font-extrabold"
+            >
               No calls yet
             </li>
           </ul>

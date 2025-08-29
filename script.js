@@ -25,10 +25,16 @@ for (let i = 0; i < copyButtons.length; i++) {
     let card = this.closest(".card");
     let number = card.getAttribute("data-number");
 
-    alert(number + " is " + "Copied");
-
-    copyCount = copyCount + 1;
-    copyCountElement.innerText = copyCount;
+    navigator.clipboard
+      .writeText(number)
+      .then(() => {
+        alert(number + " is Copied");
+        copyCount += 3;
+        copyCountElement.innerText = copyCount;
+      })
+      .catch((err) => {
+        alert("Failed to copy: " + err);
+      });
   });
 }
 
@@ -56,15 +62,14 @@ for (let i = 0; i < callButtons.length; i++) {
       emptyHistory.remove();
       emptyHistory = null;
     }
-
     let li = document.createElement("li");
     li.innerHTML = `
-  <div style="display:flex; justify-content:space-between; font-weight:bold;">
+  <div class="flex justify-between font-bold text-green-800">
     <span>${name}</span>
     <span>${getCurrentTime()}</span>
   </div>
-  <p>${number}</p>
- `;
+  <p class="text-sm text-gray-700">${number}</p>
+`;
 
     historyList.insertBefore(li, historyList.firstChild);
   });

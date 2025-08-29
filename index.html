@@ -40,7 +40,7 @@
     <!-- Navbar Section -->
     <header class="bg-white/90 backdrop-blur border-b sticky top-0 z-50 my-3">
       <nav
-        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between"
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between"
       >
         <div class="flex items-center gap-3 w-[195px] h-[50px]">
           <div
@@ -106,7 +106,7 @@
     </section>
 
     <!-- Main Section Content -->
-    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
         <div class="lg:col-span-3">
           <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-5">
@@ -141,13 +141,15 @@
                   <h3 class="font-bold text-xl mt-3">
                     National Emergency Number
                   </h3>
-                  <p class="text-xs text-gray-500 mt-1">National Emergency</p>
+                  <p class="text-xs text-gray-500 mt-1 font-bold">
+                    National Emergency
+                  </p>
                 </div>
               </div>
               <div class="mt-3">
                 <div class="hotline-number text-3xl font-bold">999</div>
                 <span
-                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
+                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-bold"
                   >All</span
                 >
               </div>
@@ -192,13 +194,13 @@
                 </div>
                 <div class="mt-3">
                   <h3 class="font-bold text-xl">Police Helpline Number</h3>
-                  <p class="text-xs text-gray-500">Police</p>
+                  <p class="text-xs text-gray-500 font-bold">Police</p>
                 </div>
               </div>
               <div class="mt-3">
                 <div class="hotline-number text-3xl font-bold">999</div>
                 <span
-                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
+                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-bold"
                   >Police</span
                 >
               </div>
@@ -242,13 +244,13 @@
 
                 <div class="mt-3">
                   <h3 class="font-bold text-xl">Fire Service Number</h3>
-                  <p class="text-xs text-gray-500">Fire Service</p>
+                  <p class="text-xs text-gray-500 font-bold">Fire Service</p>
                 </div>
               </div>
               <div class="mt-3">
                 <div class="hotline-number text-3xl font-bold">999</div>
                 <span
-                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
+                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-bold"
                   >Fire</span
                 >
               </div>
@@ -292,13 +294,13 @@
 
                 <div class="mt-3">
                   <h3 class="font-bold text-xl">Ambulance Service</h3>
-                  <p class="text-xs text-gray-500">Ambulance</p>
+                  <p class="text-xs text-gray-500 font-bold">Ambulance</p>
                 </div>
               </div>
               <div class="mt-3">
                 <div class="hotline-number text-3xl font-bold">1994-999999</div>
                 <span
-                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
+                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-bold"
                   >Health</span
                 >
               </div>
@@ -577,7 +579,9 @@
           </div>
         </div>
 
-        <aside class="bg-white rounded-xl shadow p-4 h-max lg:sticky lg:top-20">
+        <aside
+          class="bg-white rounded-2xl shadow p-4 h-max lg:sticky lg:top-20"
+        >
           <div class="flex items-center justify-between mb-3">
             <h3 class="flex items-center gap-2 text-green-800">
               <i class="fa-solid fa-clock-rotate-left"></i>
@@ -585,18 +589,18 @@
             </h3>
             <button
               id="clearHistoryBtn"
-              class="text-sm px-3 py-1 border rounded hover:bg-purple-800 font-bold"
+              class="text-sm px-3 py-1 border rounded-xl hover:bg-purple-800 font-bold"
             >
               Clear
             </button>
           </div>
           <ul
             id="historyList"
-            class="space-y-5 text-sm bg-[#fafafa] rounded-2xl"
+            class="space-y-5 text-sm bg-gray-300 rounded-xl p-2 font-semibold"
           >
             <li
               id="emptyHistory"
-              class="text-gray-500 items-center text-center py-8 font-extrabold"
+              class="text-gray-500 items-center text-center py-8 font-bold"
             >
               No calls yet
             </li>

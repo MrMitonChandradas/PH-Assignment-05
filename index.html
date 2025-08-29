@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons (CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto,
+          Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Navbar Section -->
+    <header class="bg-white/90 backdrop-blur border-b sticky top-0 z-50 mt-3">
+      <nav
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3 w-[195px] h-[50px]">
+          <div
+            class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center"
+            aria-hidden="true"
+          >
+            <img src="./assets/logo-dark.png" alt="" />
+          </div>
+          <span class="font-bold text-[#006747]"
+            >Emergency <br />
+            Service</span
+          >
+        </div>
+
+        <div class="flex items-center gap-5 text-sm">
+          <div
+            class="flex items-center gap-2 bg-gray-200 p-3 rounded-3xl"
+            title="Favorites"
+          >
+            <span id="heartCount" class="font-bold">0</span>
+            <img class="w-[25px] h-[23]" src="./assets/heart.png" alt="" />
+          </div>
+          <div
+            class="flex items-center gap-2 bg-gray-200 p-3 rounded-3xl"
+            title="Coins"
+          >
+            <div class="w-[24px] h-[24px]">
+              <img src="./assets/coin.png" alt="" />
+            </div>
+            <span id="coinCount" class="font-bold">100</span>
+          </div>
+          <div
+            class="flex items-center gap-2 bg-2 bg-[#00A63E] p-3 rounded-3xl"
+            title="Copy Count"
+          >
+            <i class="fa-regular fa-copy font-bold text-white"></i>
+            <span id="copyCount" class="font-bold text-white">0</span>
+            <h5 class="text-white font-bold">copy</h5>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- js file connecting -->
+    <script src="./script.js"></script>
+  </body>
+</html>

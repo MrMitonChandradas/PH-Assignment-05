@@ -66,9 +66,9 @@
             class="flex items-center gap-2 bg-2 bg-[#00A63E] p-3 rounded-3xl"
             title="Copy Count"
           >
-            <i class="fa-regular fa-copy font-bold text-white"></i>
             <span id="copyCount" class="font-bold text-white">0</span>
             <h5 class="text-white font-bold">copy</h5>
+            <i class="fa-regular fa-copy font-bold text-white"></i>
           </div>
         </div>
       </nav>
@@ -95,6 +95,479 @@
         </p>
       </div>
     </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <!-- Left: Cards (2 columns on large screens) -->
+        <div class="lg:col-span-3">
+          <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-5">
+            <!-- Card 1 -->
+            <div
+              class="card bg-white rounded-xl shadow p-4 flex flex-col justify-between"
+            >
+              <div class="items-start justify-between">
+                <div class="flex justify-between items-center gap-3">
+                  <div
+                    class="w-[50px] h-[50px] bg-[#FFE3E2] gap-2 p-3 rounded-2xl bg-cover"
+                    aria-hidden="true"
+                  >
+                    <img
+                      class="w-[30px] h-[30px]"
+                      src="./assets/emergency.png"
+                      alt=""
+                    />
+                  </div>
+                  <button
+                    class="heart-btn text-gray-400 hover:text-red-500"
+                    aria-label="Like"
+                  >
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+
+                <div>
+                  <h3 class="font-bold text-xl mt-3">
+                    National Emergency Number
+                  </h3>
+                  <p class="text-xs text-gray-500 mt-1">National Emergency</p>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="hotline-number text-3xl font-bold">999</div>
+                <span
+                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
+                  >All</span
+                >
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button
+                  class="copy-btn flex-1 px-3 py-2 border rounded-lg flex items-center justify-center gap-2 hover:bg-purple-700"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-bold">Copy</span>
+                </button>
+                <button
+                  class="call-btn flex-1 px-3 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-bold">Call</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="card bg-white rounded-xl shadow p-4 flex flex-col justify-between"
+            >
+              <div class="items-start justify-between">
+                <div class="flex justify-between items-center gap-3">
+                  <div
+                    class="w-[50px] h-[50px] bg-[#DFEFFF] gap-2 p-3 rounded-2xl bg-cover"
+                    aria-hidden="true"
+                  >
+                    <img src="./assets/police.png" alt="" />
+                  </div>
+
+                  <button
+                    class="heart-btn text-gray-400 hover:text-red-500"
+                    aria-label="Like"
+                  >
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+                <div class="mt-3">
+                  <h3 class="font-bold text-xl">Police Helpline Number</h3>
+                  <p class="text-xs text-gray-500">Police</p>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="hotline-number text-3xl font-bold">999</div>
+                <span
+                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
+                  >Police</span
+                >
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button
+                  class="copy-btn flex-1 px-3 py-2 border rounded-lg flex items-center justify-center gap-2 hover:bg-purple-700"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-bold">Copy</span>
+                </button>
+                <button
+                  class="call-btn flex-1 px-3 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-bold">Call</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="card bg-white rounded-xl shadow p-4 flex flex-col justify-between"
+            >
+              <div class="items-start justify-between">
+                <div class="flex justify-between items-center gap-3">
+                  <div
+                    class="w-[50px] h-[50px] bg-[#FFE3E2] gap-2 p-3 rounded-2xl bg-cover"
+                  >
+                    <img src="./assets/fire-service.png" alt="" />
+                  </div>
+                  <button
+                    class="heart-btn text-gray-400 hover:text-red-500"
+                    aria-label="Like"
+                  >
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+
+                <div class="mt-3">
+                  <h3 class="font-bold text-xl">Fire Service Number</h3>
+                  <p class="text-xs text-gray-500">Fire Service</p>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="hotline-number text-3xl font-bold">999</div>
+                <span
+                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
+                  >Fire</span
+                >
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button
+                  class="copy-btn flex-1 px-3 py-2 border rounded-lg flex items-center justify-center gap-2 hover:bg-purple-700"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-bold">Copy</span>
+                </button>
+                <button
+                  class="call-btn flex-1 px-3 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-bold">Call</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="card bg-white rounded-xl shadow p-4 flex flex-col justify-between"
+            >
+              <div class="items-start justify-between">
+                <div class="flex justify-between items-center gap-3">
+                  <div
+                    class="w-[50px] h-[50px] bg-[#FFE3E2] gap-2 p-3 rounded-2xl bg-cover"
+                  >
+                    <img src="./assets/ambulance.png" alt="" />
+                  </div>
+                  <button
+                    class="heart-btn text-gray-400 hover:text-red-500"
+                    aria-label="Like"
+                  >
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+
+                <div class="mt-3">
+                  <h3 class="font-bold text-xl">Ambulance Service</h3>
+                  <p class="text-xs text-gray-500">Ambulance</p>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="hotline-number text-3xl font-bold">1994-999999</div>
+                <span
+                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
+                  >Health</span
+                >
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button
+                  class="copy-btn flex-1 px-3 py-2 border rounded-lg flex items-center justify-center gap-2 hover:bg-purple-700"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-bold">Copy</span>
+                </button>
+                <button
+                  class="call-btn flex-1 px-3 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-bold">Call</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="card bg-white rounded-xl shadow p-4 flex flex-col justify-between"
+            >
+              <div class="items-start">
+                <div class="flex justify-between items-center gap-3">
+                  <div
+                    class="w-[50px] h-[50px] bg-[#FFE3E2] gap-2 p-3 rounded-2xl bg-cover"
+                  >
+                    <img src="./assets/emergency.png" alt="" />
+                  </div>
+                  <button
+                    class="heart-btn text-gray-400 hover:text-red-500"
+                    aria-label="Like"
+                  >
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+
+                <div class="mt-3">
+                  <h3 class="font-bold text-xl">Women & Child Helpline</h3>
+                  <p class="text-xs text-gray-500 font-bold">
+                    Women & Child Helpline
+                  </p>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="hotline-number text-3xl font-bold">109</div>
+                <span
+                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-bold"
+                  >Help</span
+                >
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button
+                  class="copy-btn flex-1 px-3 py-2 border rounded-lg flex items-center justify-center gap-2 hover:bg-purple-700"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-bold">Copy</span>
+                </button>
+                <button
+                  class="call-btn flex-1 px-3 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-bold">Call</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div
+              class="card bg-white rounded-xl shadow p-4 flex flex-col justify-between"
+              data-name="Anti-Corruption Helpline"
+              data-number="106"
+              data-category="Govt."
+            >
+              <div class="items-start">
+                <div class="flex justify-between items-center gap-3">
+                  <div
+                    class="w-[50px] h-[50px] bg-[#FFE3E2] gap-5 p-3 rounded-2xl bg-cover"
+                  >
+                    <img src="./assets/emergency.png" alt="" />
+                  </div>
+                  <button
+                    class="heart-btn text-gray-400 hover:text-red-500"
+                    aria-label="Like"
+                  >
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+
+                <div class="mt-3">
+                  <h3 class="font-bold text-xl">Anti-Corruption Helpline</h3>
+                  <p class="text-xs text-gray-500 font-bold">Anti-Corruption</p>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="hotline-number text-3xl font-bold">106</div>
+                <span
+                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-bold"
+                  >Govt</span
+                >
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button
+                  class="copy-btn flex-1 px-3 py-2 border rounded-lg flex items-center justify-center gap-2 hover:bg-purple-700"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-bold">Copy</span>
+                </button>
+                <button
+                  class="call-btn flex-1 px-3 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-bold">Call</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div
+              class="card bg-white rounded-xl shadow p-4 flex flex-col justify-between"
+            >
+              <div class="items-start justify-between">
+                <div class="flex justify-between items-center gap-3">
+                  <div
+                    class="w-[50px] h-[50px] p-3 rounded-2xl bg-[#FFE3E2]"
+                    aria-hidden="true"
+                  >
+                    <img src="./assets/emergency.png" alt="" />
+                  </div>
+                  <button
+                    class="heart-btn text-gray-400 hover:text-red-500"
+                    aria-label="Like"
+                  >
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+
+                <div class="mt-3">
+                  <h3 class="font-bold text-xl">Electricity Helpline</h3>
+                  <p class="text-xs text-gray-500 font-bold">Electricity</p>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="hotline-number text-3xl font-bold">16216</div>
+                <span
+                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-bold"
+                  >Electricity</span
+                >
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button
+                  class="copy-btn flex-1 px-3 py-2 border rounded-lg flex items-center justify-center gap-2 hover:bg-purple-700"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-bold">Copy</span>
+                </button>
+                <button
+                  class="call-btn flex-1 px-3 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-bold">Call</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div
+              class="card bg-white rounded-xl shadow p-4 flex flex-col justify-between"
+            >
+              <div class="items-start">
+                <div class="flex justify-between items-center gap-3">
+                  <div
+                    class="w-[50px] h-[50px] p-3 rounded-2xl bg-[#FFE3E2]"
+                    aria-hidden="true"
+                  >
+                    <img src="./assets/emergency.png" alt="" />
+                  </div>
+                  <button
+                    class="heart-btn text-gray-400 hover:text-red-500"
+                    aria-label="Like"
+                  >
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+
+                <div class="mt-3">
+                  <h3 class="font-bold text-xl">Brac Helpline</h3>
+                  <p class="text-xs text-gray-500 font-bold">NGO</p>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="hotline-number text-3xl font-bold">16445</div>
+                <span
+                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-bold"
+                  >NGO</span
+                >
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button
+                  class="copy-btn flex-1 px-3 py-2 border rounded-lg flex items-center justify-center gap-2 hover:bg-purple-700"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-bold">Copy</span>
+                </button>
+                <button
+                  class="call-btn flex-1 px-3 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-bold">Call</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div
+              class="card bg-white rounded-xl shadow p-4 flex flex-col justify-between"
+            >
+              <div class="items-start justify-between">
+                <div class="flex justify-between items-center gap-3">
+                  <div
+                    class="w-[50px] h-[50px] p-3 rounded-2xl bg-[#FFE3E2]"
+                    aria-hidden="true"
+                  >
+                    <img src="./assets/emergency.png" alt="" />
+                  </div>
+                  <button
+                    class="heart-btn text-gray-400 hover:text-red-500"
+                    aria-label="Like"
+                  >
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+
+                <div class="mt-3">
+                  <h3 class="font-bold text-xl">Bangladesh Railway Helpline</h3>
+                  <p class="text-xs text-gray-500 font-bold">
+                    Bangladesh Railway
+                  </p>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="hotline-number text-3xl font-bold">163</div>
+                <span
+                  class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-bold"
+                  >Railway</span
+                >
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button
+                  class="copy-btn flex-1 px-3 py-2 border rounded-lg flex items-center justify-center gap-2 hover:bg-purple-700"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-bold">Copy</span>
+                </button>
+                <button
+                  class="call-btn flex-1 px-3 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-bold">Call</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Call History -->
+        <aside class="bg-white rounded-xl shadow p-4 h-max lg:sticky lg:top-20">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-semibold flex items-center gap-2 text-green-800">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <span>Call History</span>
+            </h3>
+            <button
+              id="clearHistoryBtn"
+              class="text-sm px-3 py-1 border rounded hover:bg-gray-50"
+            >
+              Clear
+            </button>
+          </div>
+          <ul id="historyList" class="space-y-2 text-sm">
+            <!-- Empty placeholder -->
+            <li id="emptyHistory" class="text-gray-400 text-center py-8">
+              No calls yet
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
     <!-- js file connecting -->
     <script src="./script.js"></script>
   </body>

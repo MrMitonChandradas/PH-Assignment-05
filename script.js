@@ -58,8 +58,14 @@ for (let i = 0; i < callButtons.length; i++) {
     }
 
     let li = document.createElement("li");
-    li.innerHTML =
-      "<b>" + name + "</b> — " + number + " (" + getCurrentTime() + ")";
+    li.innerHTML = `
+  <div style="display:flex; justify-content:space-between; font-weight:bold;">
+    <span>${name}</span>
+    <span>${getCurrentTime()}</span>
+  </div>
+  <p>${number}</p>
+ `;
+
     historyList.insertBefore(li, historyList.firstChild);
   });
 }

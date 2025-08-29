@@ -58,7 +58,7 @@
 
         Event Bubbling is when a small element (such as a button) is clicked, the event starts from that element and gradually rises towards its parent or larger element. In the case of Event Bubbling, the childNode moves closer to its parentNode. The process is completed step by step. First, the small element moves closer to it, then the larger element. At each step, the event moves closer to its parent element. Event Bubbling can be stopped using ‍stopPropagation().
 
-## 4. What is Event Delegation in JavaScript? Why is it useful?
+## Question-4. What is Event Delegation in JavaScript? Why is it useful?
 
 ## Answer:
 
